@@ -81,7 +81,7 @@ function disabledSubmit(){
 					<li>用户承诺通过阿里云所提供的服务而进行的活动所引发的一切法律后果，由用户承担全部责任。如因用户使用阿里云服务的行为，导致阿里云或任何第三方为此承担了相关的责任，则用户需全额赔偿阿里云或任何第三方的相关经济损失。</li>
 					<li>除非取得阿里云事先书面同意，用户不得将本协议项下的权利与义务转让给任何第三方。</li>
 				</ol>
-				<h4>三、阿里云的权利与义务</h4>    
+				<h4>三、阿里云的权利与义务</h4>
 				<ol>
 					<li>阿里云有权在其服务器上复制保存用户的信息，并用之为了用户的利益与用户联络。</li>
 					<li>阿里云有权通过其所提供的服务采集与网站服务质量相关的所有数据。</li>
@@ -122,16 +122,11 @@ function disabledSubmit(){
 					<li>本服务协议条款的解释，效力及纠纷的解决，适用于中华人民共和国大陆法律。</li>
 					<li>若用户和阿里云发生任何纠纷或争议，首先应友好协商解决，协商不成的，用户在此完全同意将纠纷或争议提交杭州市西湖区人民法院管辖。</li>
 				</ol>
-				<div>（以下无正文）</div>  
+				<div>（以下无正文）</div>
 			</div>
 		</div>
 	</div>
 </form>
-<!--# 
-$filePath = Wind::getRealPath('ADMIN:conf.openplatformurl.php', true);
-$openPlatformUrl = Wind::getComponent('configParser')->parse($filePath);
-#-->
-<script src="{$openPlatformUrl}sitepush.php?a=platformPush" charset="UTF-8"></script>
 <!--# }elseif($ac_type == 'check' ){ #-->
 <div class="h_a">站点概况</div>
 <div class="table_full">
@@ -178,7 +173,7 @@ $openPlatformUrl = Wind::getComponent('configParser')->parse($filePath);
 		<col width="400" />
 		<col />
 		<!--#
-foreach($ac_evninfo as $info){ 
+foreach($ac_evninfo as $info){
 ($info[t]) && $info[v] = $info[v] ? '可用' : '不可用';
 #-->
 		<tr>

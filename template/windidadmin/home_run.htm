@@ -4,10 +4,6 @@
 <template source='TPL:admin.common.head' />
 </head>
 <body>
-<!--# 
-$filePath = Wind::getRealPath('ADMIN:conf.openplatformurl.php', true);
-$openPlatformUrl = Wind::getComponent('configParser')->parse($filePath);
-#-->
 <div class="wrap">
 	<div id="home_toptip"></div>
 	<h2 class="h_a">系统信息</h2>
@@ -17,7 +13,7 @@ $openPlatformUrl = Wind::getComponent('configParser')->parse($filePath);
 				<em>软件版本</em>
 				<span>{$sysinfo['wind_version']} <a href="http://www.phpwind.com/product.html" target="_blank">查看最新版本</a></span>
 			</li>
-			<!-- 
+			<!--
 			<li>
 				<em>操作系统</em>
 				<span>WINNT</span>
@@ -51,7 +47,7 @@ $openPlatformUrl = Wind::getComponent('configParser')->parse($filePath);
 	</div>
 	<h2 class="h_a">版权声明</h2>
     <div class="home_info" id="home_devteam">
-        <ul>                                                                                                                                              
+        <ul>
             <li><em>版权所有</em><span>www.phpwind.com</span></li>
             <li><em>用户协议</em><span><a href="http://www.phpwind.com/law.html" target="_blank">查看用户协议</a></span></li>
         </ul>
@@ -81,11 +77,10 @@ $.ajax({
     }
 });
 </script>
-<!--# 
+<!--#
 $siteUrl = $_SERVER ['HTTP_HOST'];
 $ip = Wind::getApp()->getRequest()->getClientIp();
 $ts = PW::getTime();
 #-->
-<!--script src="{$openPlatformUrl}sitepush.php?a=push&siteurl={$siteUrl}&ip={$ip}&ts={$ts}" charset="UTF-8"></script-->
 </body>
 </html>

@@ -51,7 +51,7 @@ var GV = {
 					<div class="nav">
 						<!-- 菜单异步获取，采用json格式，由js处理菜单展示结构 -->
 						<ul id="J_B_main_block">
-							
+
 						</ul>
 					</div>
 					<div class="login_info">
@@ -194,14 +194,14 @@ $('#J_B_main_block').on('click','a',function(e) {
 
 	//检查是否应该出现上一页、下一页
 	checkMenuNext();
-	
+
 	//显示左侧菜单
 	function show_left_menu(data){
-		
+
 		for(var attr in data){
 			if(data[attr] && typeof (data[attr]) === 'object') {
 			//循环子对象
-			
+
 				if(!data[attr].url && attr === 'items'){
 					//子菜单添加识别属性
 					$.each(data[attr], function(i,o){
@@ -220,7 +220,7 @@ $('#J_B_main_block').on('click','a',function(e) {
 					}else{
 					//二级菜单
 						child_html.push('<li><a href="'+ data.url +'" data-id="'+ data.id +'">'+ data.name +'</a></li>');
-						
+
 						//二级菜单全部push完毕
 						if(data.child_index == child_index){
 							html.push('<dd style="display:none;"><ul>'+child_html.join('')+'</ul></dd>');
@@ -231,20 +231,20 @@ $('#J_B_main_block').on('click','a',function(e) {
 			}
 		}
 	};
-	
+
 });
 
 //左边菜单点击
 $('#B_menubar').on('click','a',function(e) {
 	e.preventDefault();
 	e.stopPropagation();
-	
-	
+
+
 	var $this = $(this), _dt = $this.parent(), _dd = _dt.next('dd');
-	
+
 	//当前菜单状态
 	_dt.addClass('current').siblings('dt.current').removeClass('current');
-	
+
 	//子菜单显示&隐藏
 	if(_dd.length){
 		_dt.toggleClass('current');
@@ -253,7 +253,7 @@ $('#B_menubar').on('click','a',function(e) {
 		checkMenuNext();
 		return false;
 	};
-	
+
 	$('#loading').show().focus();//显示loading
 	$('#B_history li').removeClass('current');
 	var data_id = $(this).attr('data-id'),li = $('#B_history li[data-id='+ data_id +']');
@@ -265,7 +265,7 @@ $('#B_menubar').on('click','a',function(e) {
 		href : href,
 		id : data_id
 	});
-	
+
 });
 
 
@@ -333,11 +333,11 @@ function iframeJudge(options){
 			showTab(li);//计算此tab的位置，如果不在屏幕内，则移动导航位置
 			//$(this).show().unbind('load');
 		});
-		
-		
+
+
 	}
 
-	
+
 }
 
 //顶部点击一个tab页
@@ -462,8 +462,8 @@ function showTab(li) {
 
 				}
 			}
-			
-			
+
+
 		}
 	};
 
@@ -481,7 +481,7 @@ function showTab(li) {
 		//循环数据
 		$.each(data, function(i, o){
 			var cls = (o.id == id ? 'current' : '');
-			
+
 			//添加一级数据
 			arr.push('<dt class="'+ cls +'"><a href="'+ o.url +'" data-id="'+ o.id +'">'+ o.name +'</a></dt>');
 
@@ -496,7 +496,7 @@ function showTab(li) {
 				//并入一级
 				arr.push('<dd style="'+ style +'"><ul>'+child_arr.join('')+'</ul></dd>');
 			}
-			
+
 		});
 
 		//show_left_menu(data_list['items']);
@@ -513,7 +513,7 @@ function showTab(li) {
 			href : href,
 			id : id
 		});
-		
+
 	};
 })();
 </script>
@@ -521,16 +521,13 @@ function showTab(li) {
 <!--#
 $isFounder =  Wekit::load('ADMIN:service.srv.AdminFounderService')->isFounder($loginUser->username);
 if ($isFounder) {
-$filePath = Wind::getRealPath('ADMIN:conf.openplatformurl.php', true);
-$openPlatformUrl = Wind::getComponent('configParser')->parse($filePath);
 $siteurl = rawurlencode(Wekit::C('site', 'info.url'));
 $version = rawurlencode(NEXT_VERSION);
 $uid = $loginUser->uid;
 $ts = PW::getTime();
 $sitehash = Wekit::C('site', 'hash');
 $sign = md5($siteurl.$version.$uid.$ts.$sitehash);
+}
 #-->
-<script src="{$openPlatformUrl}sitepush.php?a=notice&siteurl={$siteurl}&version={$version}&uid={$uid}&ts={$ts}&sign={$sign}" charset="UTF-8"></script>
-<!--# } #-->
 	</body>
 </html>
