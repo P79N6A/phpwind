@@ -1,0 +1,370 @@
+.btn {
+    font: inherit;
+    font-size: 14px;
+    line-height: ($line-height-default - 2);
+
+    display: inline-block;
+    overflow: visible;
+
+    height: $line-height-default;
+    margin: 0;
+    padding: 0 20px;
+
+    transition: .2s ease-in-out;
+    transition-property: color, background-color, border-color;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    text-transform: none;
+
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+.btn:not(:disabled) {
+    cursor: pointer;
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn.disabled,
+.btn:disabled {
+    cursor: not-allowed;
+
+    opacity: .65;
+}
+
+.btn-default {
+    color: $text-default;
+    border-color: $border-default;
+    background-color: $bg-default;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    color: $text-default;
+    border-color: darken($border-default, 7.5%);
+    background-color: darken($bg-default, 7.5%);
+}
+
+.btn-default:active,
+.btn-default.active {
+    color: $text-default;
+    border-color: darken($border-default, 10%);
+    background-color: darken($bg-default, 10%);
+}
+
+.btn-default.disabled,
+.btn-default:disabled {
+    color: $text-default;
+    border-color: $border-default;
+    background-color: $bg-default;
+}
+
+.btn-primary {
+    color: #fff;
+    border-color: $border-primary;
+    background-color: $bg-primary;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: #fff;
+    border-color: darken($border-primary, 7.5%);
+    background-color: darken($bg-primary, 7.5%);
+}
+
+.btn-primary:active,
+.btn-primary.active {
+    color: #fff;
+    border-color: darken($border-primary, 10%);
+    background-color: darken($bg-primary, 10%);
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: #fff;
+    border-color: $border-primary;
+    background-color: $bg-primary;
+}
+
+.btn-success {
+    color: #fff;
+    border-color: $border-success;
+    background-color: $bg-success;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    color: #fff;
+    border-color: darken($border-success, 7.5%);
+    background-color: darken($bg-success, 7.5%);
+}
+
+.btn-success:active,
+.btn-success.active {
+    color: #fff;
+    border-color: darken($border-success, 10%);
+    background-color: darken($bg-success, 10%);
+}
+
+.btn-success.disabled,
+.btn-success:disabled {
+    color: #fff;
+    border-color: $border-success;
+    background-color: $bg-success;
+}
+
+.btn-warning {
+    color: #fff;
+    border-color: $border-warning;
+    background-color: $bg-warning;
+}
+
+.btn-warning:hover,
+.btn-warning:focus {
+    color: #fff;
+    border-color: darken($border-warning, 7.5%);
+    background-color: darken($bg-warning, 7.5%);
+}
+
+.btn-warning:active,
+.btn-warning.active {
+    color: #fff;
+    border-color: darken($border-warning, 10%);
+    background-color: darken($bg-warning, 10%);
+}
+
+.btn-warning.disabled,
+.btn-warning:disabled {
+    color: #fff;
+    border-color: $border-warning;
+    background-color: $bg-warning;
+}
+
+.btn-danger {
+    color: #fff;
+    border-color: $border-danger;
+    background-color: $bg-danger;
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+    color: #fff;
+    border-color: darken($border-danger, 7.5%);
+    background-color: darken($bg-danger, 7.5%);
+}
+
+.btn-danger:active,
+.btn-danger.active {
+    color: #fff;
+    border-color: darken($border-danger, 10%);
+    background-color: darken($bg-danger, 10%);
+}
+
+.btn-danger.disabled,
+.btn-danger:disabled {
+    color: #fff;
+    border-color: $border-danger;
+    background-color: $bg-danger;
+}
+
+.btn-outline-default {
+    color: $text-default;
+    border-color: $border-default;
+    background-color: transparent;
+}
+
+.btn-outline-default:hover,
+.btn-outline-default:focus {
+    color: $text-default;
+    border-color: $border-default;
+    background-color: $bg-default;
+}
+
+.btn-outline-default:active,
+.btn-outline-default.active {
+    color: $text-default;
+    border-color: darken($border-default, 10%);
+    background-color: darken($bg-default, 10%);
+}
+
+.btn-outline-default.disabled,
+.btn-outline-default:disabled {
+    color: $text-default;
+    border-color: $border-default;
+    background-color: transparent;
+}
+
+.btn-outline-primary {
+    color: $text-primary;
+    border-color: $border-primary;
+    background-color: transparent;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    color: #fff;
+    border-color: $border-primary;
+    background-color: $bg-primary;
+}
+
+.btn-outline-primary:active,
+.btn-outline-primary.active {
+    color: #fff;
+    border-color: darken($border-primary, 10%);
+    background-color: darken($bg-primary, 10%);
+}
+
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+    color: $text-primary;
+    border-color: $border-primary;
+    background-color: transparent;
+}
+
+.btn-outline-success {
+    color: $text-success;
+    border-color: $border-success;
+    background-color: transparent;
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:focus {
+    color: #fff;
+    border-color: $border-success;
+    background-color: $bg-success;
+}
+
+.btn-outline-success:active,
+.btn-outline-success.active {
+    color: #fff;
+    border-color: darken($border-success, 10%);
+    background-color: darken($bg-success, 10%);
+}
+
+.btn-outline-success.disabled,
+.btn-outline-success:disabled {
+    color: $text-success;
+    border-color: $border-success;
+    background-color: transparent;
+}
+
+.btn-outline-warning {
+    color: $text-warning;
+    border-color: $border-warning;
+    background-color: transparent;
+}
+
+.btn-outline-warning:hover,
+.btn-outline-warning:focus {
+    color: #fff;
+    border-color: $border-warning;
+    background-color: $bg-warning;
+}
+
+.btn-outline-warning:active,
+.btn-outline-warning.active {
+    color: #fff;
+    border-color: darken($border-warning, 10%);
+    background-color: darken($bg-warning, 10%);
+}
+
+.btn-outline-warning.disabled,
+.btn-outline-warning:disabled {
+    color: $text-warning;
+    border-color: $border-warning;
+    background-color: transparent;
+}
+
+.btn-outline-danger {
+    color: $text-danger;
+    border-color: $border-danger;
+    background-color: transparent;
+}
+
+.btn-outline-danger:hover,
+.btn-outline-danger:focus {
+    color: #fff;
+    border-color: $border-danger;
+    background-color: $bg-danger;
+}
+
+.btn-outline-danger:active,
+.btn-outline-danger.active {
+    color: #fff;
+    border-color: darken($border-danger, 10%);
+    background-color: darken($bg-danger, 10%);
+}
+
+.btn-outline-danger.disabled,
+.btn-outline-danger:disabled {
+    color: $text-danger;
+    border-color: $border-danger;
+    background-color: transparent;
+}
+
+.btn-block {
+    display: block;
+
+    width: 100%;
+}
+
+.btn-block + .btn-block {
+    margin-top: 10px;
+}
+
+input[type='submit'].btn-block,
+input[type='reset'].btn-block,
+input[type='button'].btn-block {
+    width: 100%;
+}
+
+.btn-small {
+    font-size: 12px;
+    line-height: ($line-height-small - 2);
+
+    height: $line-height-small;
+    padding: 0 10px;
+}
+
+.btn-large {
+    font-size: 16px;
+    line-height: ($line-height-large - 2);
+
+    height: $line-height-large;
+    padding: 0 30px;
+}
+
+.btn-circle {
+    border-radius: ($line-height-large / 2);
+}
+
+.btn-group {
+    position: relative;
+
+    display: inline-flex;
+
+    vertical-align: middle;
+}
+
+.btn-group > .btn:not(:first-child) {
+    margin-left: -1px;
+}
+
+.btn-group > .btn:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.btn-group > .btn:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}

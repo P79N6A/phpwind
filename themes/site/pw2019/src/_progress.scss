@@ -1,0 +1,94 @@
+.progress-bar {
+    @include clearfix();
+}
+
+.progress-left {
+    float: left;
+
+    width: 100%;
+}
+
+.progress-cont {
+    margin-right: 100px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    .percent {
+        display: block;
+
+        height: 4px;
+
+        background-color: $bg-default;
+    }
+
+    .num {
+        display: block;
+
+        height: 4px;
+    }
+
+    .num-1 {
+        background: $bg-success linear-gradient(-45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent) !important;
+        background-size: 40px 40px !important;
+    }
+
+    .num-2 {
+        background: $bg-warning linear-gradient(-45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent) !important;
+        background-size: 40px 40px !important;
+    }
+
+    .num-3 {
+        background: $bg-primary linear-gradient(-45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent) !important;
+        background-size: 40px 40px !important;
+    }
+
+    .num-4 {
+        background: $bg-danger linear-gradient(-45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent) !important;
+        background-size: 40px 40px !important;
+    }
+}
+
+.progress-right {
+    font-size: 12px;
+    line-height: 16px;
+
+    position: relative;
+
+    float: right;
+
+    width: 100px;
+    margin-left: -100px;
+
+    text-align: center;
+
+    .percent {
+        float: left;
+
+        width: 40%;
+    }
+
+    .num {
+        float: right;
+
+        width: 60%;
+
+        color: #fff;
+        border-radius: 2px;
+    }
+
+    .num-1 {
+        background-color: $bg-success;
+    }
+
+    .num-2 {
+        background-color: $bg-warning;
+    }
+
+    .num-3 {
+        background-color: $bg-primary;
+    }
+
+    .num-4 {
+        background-color: $bg-danger;
+    }
+}

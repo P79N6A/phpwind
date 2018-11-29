@@ -1,0 +1,34 @@
+.xui-article {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    ul,
+    ol {
+        padding-left: 40px;
+    }
+
+    ul li {
+        list-style: disc outside;
+    }
+
+    ol li {
+        list-style: decimal outside;
+    }
+
+    dt {
+        font-weight: 700;
+    }
+
+    dd {
+        margin-left: 20px;
+    }
+
+    .blockquote {
+        padding: 20px 10px;
+
+        border-left: 4px solid $border-default;
+        background-color: $body-bg;
+    }
+}

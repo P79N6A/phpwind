@@ -1,0 +1,59 @@
+$white: #fff !default;
+$gray-50: #f8f9fa !default;
+$gray-100: #f1f3f5 !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+$primary: #1e87f0 !default;
+$success: #32d296 !default;
+$warning: #faa05a !default;
+$danger: #f0506e !default;
+//
+$text-light: $gray-400 !default;
+$text-dark: $gray-900 !default;
+$bg-light: $gray-50 !default;
+$bg-dark: $gray-200 !default;
+$border-light: $gray-100 !default;
+$border-dark: $gray-300 !default;
+//
+$text-default: $gray-600 !default;
+$text-primary: $primary !default;
+$text-success: $success !default;
+$text-warning: $warning !default;
+$text-danger: $danger !default;
+$bg-default: $gray-100 !default;
+$bg-primary: $primary !default;
+$bg-success: $success !default;
+$bg-warning: $warning !default;
+$bg-danger: $danger !default;
+$border-default: $gray-200 !default;
+$border-primary: $primary !default;
+$border-success: $success !default;
+$border-warning: $warning !default;
+$border-danger: $danger !default;
+//
+$alert-bg-primary: #dbe4ff !default;
+$alert-bg-success: #c3fae8 !default;
+$alert-bg-warning: #fff3bf !default;
+$alert-bg-danger: #ffe3e3 !default;
+//
+$line-height-small: 28px !default;
+$line-height-default: 35px !default;
+$line-height-large: 42px !default;
+$shadow-small: 0 2px 4px rgba(0, 0, 0, .1) !default;
+$shadow-default: 0 4px 8px rgba(0, 0, 0, .2) !default;
+$shadow-large: 0 8px 16px rgba(0, 0, 0, .3) !default;
+//
+$body-bg: $gray-50 !default;
+$body-color: $gray-900 !default;
+$link-color: $gray-900 !default;
+$link-hover: $primary !default;
+$form-body-color: $gray-700 !default;
+$form-border-color: $gray-300 !default;
+$grid-gutter-width: 20px !default;
